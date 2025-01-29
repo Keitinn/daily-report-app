@@ -1,0 +1,97 @@
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#calendar .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendar .day:hover {
+    background-color: #f0f0f0;
+}
+
+#calendar .day.pen-mark {
+    position: relative;
+}
+
+#calendar .day.pen-mark::after {
+    content: '✏️';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#daily-report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#daily-report-form h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#daily-report-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#daily-report-form label {
+    font-weight: bold;
+}
+
+#daily-report-form input,
+#daily-report-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#daily-report-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#daily-report-form button:hover {
+    background-color: #0056b3;
+}
+
+#delete-mode,
+#export-csv {
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#delete-mode:hover,
+#export-csv:hover {
+    background-color: #c82333;
+}

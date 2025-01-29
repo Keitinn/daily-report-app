@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Report App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calendar"></div>
+    <div id="daily-report-form" style="display: none;">
+        <h2>Daily Report</h2>
+        <form>
+            <label for="work-hours">Work Hours:</label>
+            <input type="number" id="work-hours" name="work-hours" required>
+            <br>
+            <label for="work-content">Work Content:</label>
+            <textarea id="work-content" name="work-content" required></textarea>
+            <br>
+            <label for="next-tasks">Next Day Tasks:</label>
+            <textarea id="next-tasks" name="next-tasks" required></textarea>
+            <br>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <button id="delete-mode">Delete Mode</button>
+    <button id="export-csv">Export to CSV</button>
+    <script src="app.js"></script>
+</body>
+</html>
